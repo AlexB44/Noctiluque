@@ -1,3 +1,47 @@
+/*==============================*\ 
+	GALERIE - POPUP
+\*==============================*/ 
+
+.cModal {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  opacity:0;
+  pointer-events: none;
+}
+.cModal:target {
+  opacity:1;
+  pointer-events: auto;
+}
+.cModal > div {
+  width: 100vw;
+  position: relative;
+  padding: 8px 8px 8px 8px;
+  border-radius: 2px;
+  background: #000;
+}
+
+.cf {
+    float: right;
+    padding-right: 2vw;
+    line-height:30px;
+}
+
+.cf a{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    color: #FFF;
+}
+
+
+/*==============================*\ 
+	GALERIE - CAROUSEL 
+\*==============================*/ 
+
 .carousel {
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
@@ -6,7 +50,7 @@
 
 .carousel-inner {
     position: relative;
-    overflow: hidden;
+
     width: 100%;
 }
 
