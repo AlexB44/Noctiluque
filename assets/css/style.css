@@ -151,10 +151,17 @@ a {
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   text-align: center;
-  width: 40px;
-  z-index: 10; }
+  width: 40px; }
 
 .arrow {
+  height: 2em;
+  width: 45em;
+  position: fixed;
+  right: 5vw;
+  top: 50%;
+  z-index: 10; }
+
+.arrow a {
   float: right;
   padding-right: 5vw;
   position: absolute; }
@@ -194,13 +201,6 @@ dl#photo img {
   border: 0px;
   max-height: 28em;
   max-width: 45em; }
-
-.arrow {
-  height: 2em;
-  width: 45em;
-  bottom: 4em;
-  position: fixed;
-  margin: auto; }
 
 .img-container img {
   display: block;
