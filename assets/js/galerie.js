@@ -1,6 +1,6 @@
 imgtab = {
   "gal_white":["images/galerie/perso/white1.jpg","images/galerie/perso/white2.jpg","images/galerie/perso/white3.jpg","images/galerie/perso/bento4.jpg"],
-  "gal_bento":["../images/galerie/perso/bento1.jpg","../images/galerie/perso/bento2.jpg","../images/galerie/perso/bento3.jpg"],
+  "gal_bento":["./images/galerie/perso/bento1.jpg","./assets/images/galerie/perso/bento2.jpg","images/galerie/perso/bento3.jpg"],
   "gal_mine":["images/galerie/perso/mine1.jpg","images/galerie/perso/mine2.jpg"],
   "gal_child":["images/galerie/perso/child1.jpg","images/galerie/perso/child2.jpg"],
   "gal_truc":["images/galerie/perso/truc1.jpg","images/galerie/perso/truc2.jpg","images/galerie/perso/truc3.jpg","images/galerie/perso/truc4.jpg"],
@@ -15,17 +15,12 @@ imgtab = {
   "gal_natural":["images/galerie/pro/natural1.png","images/galerie/pro/natural2.png","images/galerie/pro/natural3.png","images/galerie/pro/natural4.png","images/galerie/pro/natural5.png"],
 };
 
+function displayPics() { 
+  var photos = document.getElementById('galerie_mini'); 
 
+  var liens = photos.getElementsByTagName('a'); 
 
-function displayPics() 
-
-{ 
-  var photos = document.getElementById('galerie_mini') ; 
-
-  var liens = photos.getElementsByTagName('a') ; 
-
-  var big_photo = document.getElementById('big_pict') ; 
-
+  var big_photo = document.getElementById('big_pict');
  
   var titre_photo = document.getElementById('photo').getElementsByTagName('dt')[0] ; 
 	
