@@ -61,10 +61,10 @@ a {
   background: rgba(0, 0, 0, 0.5); }
 
 .galerie {
-  margin: 100px auto 0;
+  margin: 5vh auto 0;
   max-width: 632px; }
   .galerie h1 {
-    color: #5ad6eb;
+    color: #FFF;
     font-size: 25px;
     font-family: "Quicksand", sans-serif;
     text-align: center; }
@@ -73,7 +73,7 @@ a {
 	GALERIE -- Miniatures 
 \*==============================*/
 .galerie--min ul {
-  margin-top: 5vh; }
+  margin-top: 10vh; }
 .galerie--min li {
   padding: 2px;
   display: inline-block;

@@ -83,11 +83,11 @@ a {
 }
 
 .galerie {
-  margin: 100px auto 0;
+  margin: 5vh auto 0;
   max-width: 632px;
 
   h1 {
-    color: $neon-blue;
+    color: #FFF;
     font-size: $size-secondary;
     font-family: $family-primary;
     text-align: center;
@@ -102,7 +102,7 @@ a {
 .galerie--min {
 
   ul {
-    margin-top: 5vh;
+    margin-top: 10vh;
   }
 
   li {
