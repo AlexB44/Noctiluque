@@ -23,25 +23,37 @@ body {
 nav { 
     background: rgba(0, 0, 0, .7);
     float: right;
-    width: 13%;
+    width: 10%;
     height:100vh;
-    font-size: $size-secondary;
+    font-size: $size-primary;
     font-family: $family-primary;
     color:transparent;
 
     li {
         list-style-type: none;
-        line-height:70px;
+        line-height:40px;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         display:block;
         background-image:url("../images/style/oceanfloor.jpg");
+        margin-left: -10%;
     }
 }
 
 a {
     text-decoration: none;
 }
+
+li:hover {
+        -webkit-text-fill-color: #1A495F;
+        -webkit-background-clip: text;
+        transition: 1s;
+    }
+
+/*li:active {
+        -webkit-text-fill-color: #FFF;
+        -webkit-background-clip: text;
+    }*/
 
 /*=============================================================*\ 
 	INDEX.HTML / INDEX.HTML / INDEX.HTML / INDEX.HTML 
@@ -75,7 +87,7 @@ a {
 
 .content {
   float:left;
-  width:87%;
+  width:90%;
   height:100vh;
   background: rgba(0, 0, 0, .5);
 }
