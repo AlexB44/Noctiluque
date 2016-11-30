@@ -49,8 +49,6 @@ a {
 	 
 \*=============================================================*/ 
 
-
-
 .presentation {
   float: right;
   padding-right: 15vw;
@@ -94,7 +92,6 @@ a {
   }
 }
 
-
 /*==============================*\ 
 	GALERIE -- Miniatures 
 \*==============================*/ 
@@ -108,8 +105,8 @@ a {
   li {
     padding: 2px;
     display: inline-block;
-    height: 75px;
-    width: 75px;
+    height: 100px;
+    width: 100px;
 
     /*:after {
       content:'\A';
