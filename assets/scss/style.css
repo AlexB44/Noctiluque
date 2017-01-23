@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "Simplifica";
+  src: url("../font/simplifica.ttf"); }
+body {
+  color: #5ad6eb;
+  background-image: url("../images/style/oceanfloor.jpg");
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover; }
+
+nav {
+  /*background: rgba(0, 0, 0, .7);*/
+  background: red;
+  float: right;
+  width: 10%;
+  height: 100vh;
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  color: transparent; }
+  nav li {
+    list-style-type: none;
+    line-height: 40px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display: block;
+    background-image: url("../images/style/oceanfloor.jpg");
+    margin-left: -10%; }
+
+a {
+  text-decoration: none; }
+
+li:hover {
+  -webkit-text-fill-color: #1A495F;
+  -webkit-background-clip: text;
+  transition: 1s; }
+
+/*li:active {
+        -webkit-text-fill-color: #FFF;
+        -webkit-background-clip: text;
+    }*/
+.content {
+  float: left;
+  width: 90%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); }
+  .content .content-box {
+    width: 50vw;
+    margin: 0 auto;
+    border: 1px solid red; }
+    .content .content-box .iconbar {
+      border: 1px solid red; }
+    .content .content-box .thuglife {
+      border: 1px solid red; }
+
+/*=============================================================*\ 
+	INDEX.HTML / INDEX.HTML / INDEX.HTML / INDEX.HTML 
+-------------------------------------------------------------- 
+	 
+\*=============================================================*/
+.presentation {
+  float: right;
+  padding-right: 15vw;
+  padding-top: 10vh; }
+  .presentation h1 {
+    margin-bottom: 0px;
+    font-family: 'Simplifica', sans-serif;
+    font-size: 5em; }
+  .presentation h2 {
+    margin-top: 0px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.5em; }
+
+/*=============================================================*\ 
+	GALERIE.HTML / GALERIE.HTML / GALERIE.HTML / GALERIE.HTML 
+-------------------------------------------------------------- 
+	 
+\*=============================================================*/
+.galerie {
+  margin: 5vh auto 0;
+  max-width: 632px; }
+  .galerie h1 {
+    color: #FFF;
+    font-size: 25px;
+    font-family: "Quicksand", sans-serif;
+    text-align: center; }
+
+/*==============================*\ 
+	GALERIE -- Miniatures 
+\*==============================*/
+.galerie--min ul {
+  margin-top: 10vh; }
+.galerie--min li {
+  padding: 2px;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  /*:after {
+    content:'\A';
+    position:absolute;
+    width:75px; height:75px;
+    margin: 2px;
+    background:rgba(0,0,0,0.6);
+    opacity:1;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+
+  :hover:after {
+    opacity:0;
+  }*/ }
+.galerie--min img {
+  width: 100%;
+  height: auto; }
+
+/*# sourceMappingURL=style.css.map */

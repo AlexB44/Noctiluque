@@ -1,11 +1,27 @@
 @font-face {
   font-family: "Simplifica";
   src: url("../font/simplifica.ttf"); }
-body {
-  color: #5ad6eb;
-  background-image: url("../images/style/oceanfloor.jpg");
+/*font-families*/
+/*Colors*/
+/*font-sizes*/
+body, .body-index {
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  height: 100vh;
+  color: #FFF;
+  font-family: "Quicksand", sans-serif; }
+
+body {
+  background-image: url("../images/style/back_empty.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover; }
+
+.body-index {
+  background-image: url("../images/style/back_mermaid.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -13,38 +29,149 @@ body {
   -webkit-background-size: cover; }
 
 nav {
-  background: rgba(0, 0, 0, 0.7);
-  float: right;
-  width: 10%;
+  float: left;
+  position: absolute;
   height: 100vh;
+  width: 10%;
   font-size: 18px;
-  font-family: "Quicksand", sans-serif;
-  color: transparent; }
+  font-weight: 300; }
+  nav .active {
+    font-weight: 700; }
   nav li {
-    list-style-type: none;
-    line-height: 40px;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
     display: block;
-    background-image: url("../images/style/oceanfloor.jpg");
-    margin-left: -10%; }
+    padding-left: 50px;
+    line-height: 40px; }
+    nav li a {
+      color: #FFF;
+      -o-transition: 3s;
+      -ms-transition: 3s;
+      -moz-transition: 3s;
+      -webkit-transition: 3s;
+      transition: 3s; }
+    nav li a:hover {
+      color: #1A495F; }
 
-a {
-  text-decoration: none; }
+/* Refaire cette partir au propre */
+.wrapper {
+  margin-top: 70px;
+  top: 10vh;
+  height: 100vh;
+  width: 100vw; }
 
-li:hover {
-  -webkit-text-fill-color: #1A495F;
-  -webkit-background-clip: text;
-  transition: 1s; }
+/* Refaire cette partir au propre */
+.content {
+  margin: 0 auto;
+  padding-top: 80px;
+  width: 50vw;
+  text-align: center;
+  /* ABOUT */ }
+  .content .icon-contact {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    width: 20vw;
+    line-height: 40px; }
+    .content .icon-contact li, .content .icon-contact a {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      width: 40px; }
+    .content .icon-contact li[name=behance] {
+      background-image: url("../images/style/behance.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      -webkit-background-size: contain; }
+    .content .icon-contact li[name=twitter] {
+      background-image: url("../images/style/twitter.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      -webkit-background-size: contain; }
+    .content .icon-contact li[name=facebook] {
+      background-image: url("../images/style/facebook.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      -webkit-background-size: contain; }
+    .content .icon-contact li[name=mail] {
+      background-image: url("../images/style/gmail.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      -webkit-background-size: contain; }
+    .content .icon-contact li[name=skype] {
+      background-image: url("../images/style/skype.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      -webkit-background-size: contain; }
+    .content .icon-contact li[name=slack] {
+      background-image: url("../images/style/slack.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      -webkit-background-size: contain; }
+  .content textarea.info.skype {
+    margin: 0 auto;
+    height: 3vh;
+    width: calc(20vw - 2px);
+    color: #FFF;
+    background: transparent;
+    border: 1px solid #FFF;
+    resize: none; }
+    .content textarea.info.skype :focus {
+      height: 3vh; }
+  .content form {
+    margin: 0 auto;
+    width: 20vw; }
+    .content form input, .content form textarea, .content form button {
+      color: #FFF;
+      background: transparent;
+      border: 1px solid #FFF; }
+    .content form input, .content form textarea {
+      margin-top: 2vh;
+      width: calc(20vw - 4px); }
+    .content form input, .content form button {
+      line-height: 3.5vh; }
+    .content form input {
+      padding-left: 10px;
+      width: calc(20vw - 14px); }
+    .content form textarea {
+      height: 25vh;
+      resize: none; }
+    .content form button {
+      margin-top: 2vh;
+      width: 5vw; }
+  .content #bouton_texte:hover {
+    cursor: pointer; }
+  .content .icon-about, .content .thuglife {
+    display: inline-block;
+    margin: 0 auto;
+    width: 40vw; }
+  .content .icon-about {
+    margin-bottom: 2vh; }
+    .content .icon-about li {
+      float: left;
+      height: 50px;
+      width: 25%; }
+  .content .thuglife {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 13px; }
+    .content .thuglife h3 {
+      margin: 0;
+      text-align: left;
+      font-size: 25px;
+      font-weight: 300; }
+    .content .thuglife p {
+      margin: 0.3vh 0 5vh 0;
+      text-align: left; }
 
-/*li:active {
-        -webkit-text-fill-color: #FFF;
-        -webkit-background-clip: text;
-    }*/
 /*=============================================================*\ 
 	INDEX.HTML / INDEX.HTML / INDEX.HTML / INDEX.HTML 
 -------------------------------------------------------------- 
-	 
 \*=============================================================*/
 .presentation {
   float: right;
@@ -53,42 +180,42 @@ li:hover {
   .presentation h1 {
     margin-bottom: 0px;
     font-family: 'Simplifica', sans-serif;
-    font-size: 5em; }
+    font-size: 3em; }
   .presentation h2 {
     margin-top: 0px;
     font-family: "Quicksand", sans-serif;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    font-weight: 300; }
 
 /*=============================================================*\ 
 	GALERIE.HTML / GALERIE.HTML / GALERIE.HTML / GALERIE.HTML 
 -------------------------------------------------------------- 
-	 
 \*=============================================================*/
-.content {
-  float: left;
-  width: 90%;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.5); }
-
 .galerie {
-  margin: 5vh auto 0;
+  margin: 0 auto;
   max-width: 632px; }
-  .galerie h1 {
+  .galerie h2 {
     color: #FFF;
-    font-size: 25px;
     font-family: "Quicksand", sans-serif;
-    text-align: center; }
+    font-weight: 300;
+    font-size: 25px; }
 
 /*==============================*\ 
 	GALERIE -- Miniatures 
 \*==============================*/
+.galerie--filter {
+  display: flex;
+  justify-content: space-around;
+  width: 20vw;
+  margin: 0 auto; }
+
 .galerie--min ul {
   margin-top: 10vh; }
 .galerie--min li {
-  padding: 2px;
   display: inline-block;
-  height: 100px;
-  width: 100px;
+  padding: 2px;
+  height: 75px;
+  width: 75px;
   /*:after {
     content:'\A';
     position:absolute;
@@ -104,7 +231,54 @@ li:hover {
     opacity:0;
   }*/ }
 .galerie--min img {
-  width: 100%;
-  height: auto; }
+  height: auto;
+  width: 100%; }
+
+/*==============================*\ 
+	DEV -- Miniatures 
+\*==============================*/
+.dev--min ul {
+  margin-top: 10vh; }
+.dev--min li {
+  display: inline-block;
+  padding: 2px;
+  height: 180px;
+  width: 180px; }
+.dev--min img {
+  height: auto;
+  width: 100%; }
+
+li, ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+/*li:active {
+        -webkit-text-fill-color: #FFF;
+        -webkit-background-clip: text;
+    }*/
+.info {
+  display: none; }
+
+.active {
+  display: inherit; }
+
+.disabled {
+  opacity: 0.5;
+  -o-transition: 1.5s;
+  -ms-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -webkit-transition: 1.5s;
+  transition: 1.5s; }
+
+.enabled {
+  -o-transition: 1.5s;
+  -ms-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -webkit-transition: 1.5s;
+  transition: 1.5s; }
 
 /*# sourceMappingURL=style.css.map */

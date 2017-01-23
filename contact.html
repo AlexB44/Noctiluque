@@ -12,7 +12,7 @@
     <title>Noctiluque</title>
 	
 	<!-- Font -->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet">
 
     <!-- CSS -->
 	<link href="assets/css/style.css" rel="stylesheet">
@@ -22,23 +22,51 @@
 </head>
 <body>
 
-    <div class="content">
+    <div class="wrapper">
+        <nav>
+            <ul>
+                <li><a href="galerie.html">Graphism</a></li>
+                <li><a href="dev.html">Devlopment</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-       bleurg
-        
+        <div class="content">
 
+            <ul class="icon-contact">
+                <li name="behance"><a href="http://www.w3.org" target="blank"></a></li>
+                <li name="twitter"><a href="https://twitter.com/Luciefudge" target="blank"></a></li>
+                <li name="facebook"><a href="http://www.w3.org" target="blank"></a></li>
+                <li name="mail"></li>
+                <li name="skype"></li>
+                <li name="slack"><img src="assets/images/style/slack.png" alt="Slack" width="40"/></li>
+            </ul>
+            
+
+        <div class="adresse">
+            <textarea class="info skype"  onclick="this.focus();this.select()">
+                <p>alexandrabodier</p>
+            </textarea>
+        </div>
+
+        <div class="info mail active">     
+            <form action="...">
+                    <br>
+                        <input type="text" placeholder="Nom" name="user_name">
+                    <br>
+                        <input type="email" placeholder="E-Mail" name="user_email">
+                    <br>
+                        <textarea id="msg" name="user_message"></textarea>
+                    <br>
+                        <button class="button" type="submit">Envoi</button>
+            </form>
+        </div>
+            
     </div><!-- End content -->
+</div><!-- End wrapper -->
 
-    <nav>
-        <ul>
-            <li><a href="galerie.html">Graphism</a></li>
-            <li><a href="dev.html">Devlopment</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <script type="text/javascript" src="./assets/js/galerie.js"></script>
+<script type="text/javascript" src="js/original_contact.js"></script>
 
 </body>
 </html>
