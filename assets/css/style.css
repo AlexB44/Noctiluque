@@ -28,6 +28,14 @@ body {
   background-size: cover;
   -webkit-background-size: cover; }
 
+li, ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
 nav {
   float: left;
   position: absolute;
@@ -195,9 +203,11 @@ nav {
   margin: 0 auto;
   max-width: 632px; }
   .galerie h2 {
+    margin: 0;
+    padding: 0;
     color: #FFF;
     font-family: "Quicksand", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 25px; }
 
 /*==============================*\ 
@@ -234,6 +244,10 @@ nav {
   height: auto;
   width: 100%; }
 
+/*=============================================================*\ 
+	DEV.HTML / DEV.HTML / DEV.HTML / DEV.HTML / DEV.HTML
+-------------------------------------------------------------- 
+\*=============================================================*/
 /*==============================*\ 
 	DEV -- Miniatures 
 \*==============================*/
@@ -248,18 +262,55 @@ nav {
   height: auto;
   width: 100%; }
 
-li, ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0; }
+/*=============================================================*\ 
+	DEV_PROJECT.HTML / DEV_PROJECT.HTML / DEV_PROJECT.HTML
+-------------------------------------------------------------- 
+\*=============================================================*/
+.web {
+  width: 100vw; }
 
-a {
-  text-decoration: none; }
+.web-left {
+  display: inline-block;
+  float: left;
+  height: 70vh;
+  width: 20vw;
+  background-image: url("../images/style/back_empty.jpg"); }
 
-/*li:active {
-        -webkit-text-fill-color: #FFF;
-        -webkit-background-clip: text;
-    }*/
+.web-right {
+  display: inline-block;
+  padding: 0 3vh;
+  float: left;
+  height: 70vh;
+  width: 20vw;
+  text-align: left; }
+  .web-right h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    font-weight: 300; }
+  .web-right p {
+    font-size: 13px; }
+  .web-right .dev--link {
+    height: 3vh;
+    line-height: 3vh;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #FFF;
+    background-color: transparent;
+    text-decoration: none; }
+    .web-right .dev--link a {
+      color: #FFF;
+      -o-transition: 1s;
+      -ms-transition: 1s;
+      -moz-transition: 13s;
+      -webkit-transition: 1s;
+      transition: 1s; }
+    .web-right .dev--link a:hover {
+      color: #1A495F; }
+  .web-right .dev--img {
+    background-image: url("../images/style/back_empty.jpg");
+    background-size: cover; }
+
 .info {
   display: none; }
 

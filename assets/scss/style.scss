@@ -41,6 +41,16 @@ body {
     -webkit-background-size: cover;
 }
 
+li, ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+  }
+
+a {
+    text-decoration: none;
+}
+
 nav { 
     float: left;
     position: absolute;
@@ -120,7 +130,7 @@ nav {
       -webkit-background-size: contain;
     }
 
-     li[name=facebook] {
+    li[name=facebook] {
       background-image: url("../images/style/facebook.png");
       background-repeat: no-repeat;
       background-position: center center;
@@ -128,7 +138,7 @@ nav {
       -webkit-background-size: contain;
     }
 
-        li[name=mail] {
+    li[name=mail] {
       background-image: url("../images/style/gmail.png");
       background-repeat: no-repeat;
       background-position: center center;
@@ -144,7 +154,7 @@ nav {
       -webkit-background-size: contain;
     }
 
-     li[name=slack] {
+    li[name=slack] {
       background-image: url("../images/style/slack.png");
       background-repeat: no-repeat;
       background-position: center center;
@@ -268,6 +278,7 @@ nav {
     font-weight: 300;
   }
 }
+
 /*=============================================================*\ 
 	GALERIE.HTML / GALERIE.HTML / GALERIE.HTML / GALERIE.HTML 
 -------------------------------------------------------------- 
@@ -278,9 +289,11 @@ nav {
   max-width: 632px;
 
   h2 {
+    margin: 0;
+    padding: 0;
     color: #FFF;
     font-family: $family-primary;
-    font-weight: 300;
+    font-weight: 400;
     font-size: $size-secondary;
   }
 }
@@ -330,7 +343,10 @@ nav {
     width: 100%;
   }
 }
-
+/*=============================================================*\ 
+	DEV.HTML / DEV.HTML / DEV.HTML / DEV.HTML / DEV.HTML
+-------------------------------------------------------------- 
+\*=============================================================*/ 
 /*==============================*\ 
 	DEV -- Miniatures 
 \*==============================*/ 
@@ -354,35 +370,75 @@ nav {
   }
 }
 
+/*=============================================================*\ 
+	DEV_PROJECT.HTML / DEV_PROJECT.HTML / DEV_PROJECT.HTML
+-------------------------------------------------------------- 
+\*=============================================================*/ 
 
-
-
-
-
-
-
-
-
-
-
-
-
-li, ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-  }
-
-a {
-    text-decoration: none;
+.web {
+  width: 100vw;
 }
 
+.web-left {
+  display: inline-block;
+  float: left;
+  height: 70vh;
+  width: 20vw;
+  background-image: url("../images/style/back_empty.jpg");
+}
+
+.web-right {
+  display: inline-block;
+  padding: 0 3vh;
+  float: left;
+  height: 70vh;
+  width: 20vw;
+  text-align: left;
 
 
-/*li:active {
-        -webkit-text-fill-color: #FFF;
-        -webkit-background-clip: text;
-    }*/
+    h3 {
+      margin: 0;
+      padding: 0;
+      font-size: $size-secondary;
+      font-weight: 300;
+    }
+
+    h4 {
+
+    }
+
+    p {
+      font-size: $size-small;
+    }
+
+    .dev--link {
+      height:3vh;
+      line-height:3vh;
+      width: 100%;
+      text-align: center;
+      border: 1px solid #FFF;
+      background-color: transparent;
+      text-decoration: none;
+
+        a {
+          color: $basic-color;
+          -o-transition: 1s;
+          -ms-transition: 1s;
+          -moz-transition: 13s;
+          -webkit-transition: 1s;
+          transition: 1s;
+        }
+
+        a:hover {
+          color: #1A495F;
+        }  
+    }
+
+    .dev--img {
+      background-image: url("../images/style/back_empty.jpg");
+      background-size: cover;
+    }
+}
 
 
 
