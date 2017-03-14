@@ -4,7 +4,8 @@
 /*font-families*/
 /*Colors*/
 /*font-sizes*/
-body, .body-index {
+body,
+.body-index {
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -28,7 +29,8 @@ body {
   background-size: cover;
   -webkit-background-size: cover; }
 
-li, ul {
+li,
+ul {
   list-style-type: none;
   padding: 0;
   margin: 0; }
@@ -80,7 +82,8 @@ nav {
     margin-bottom: 5vh;
     width: 20vw;
     line-height: 40px; }
-    .content .icon-contact li, .content .icon-contact a {
+    .content .icon-contact li,
+    .content .icon-contact a {
       display: flex;
       align-items: center;
       height: 40px;
@@ -134,14 +137,18 @@ nav {
   .content form {
     margin: 0 auto;
     width: 20vw; }
-    .content form input, .content form textarea, .content form button {
+    .content form input,
+    .content form textarea,
+    .content form button {
       color: #FFF;
       background: transparent;
       border: 1px solid #FFF; }
-    .content form input, .content form textarea {
+    .content form input,
+    .content form textarea {
       margin-top: 2vh;
       width: calc(20vw - 4px); }
-    .content form input, .content form button {
+    .content form input,
+    .content form button {
       line-height: 3.5vh; }
     .content form input {
       padding-left: 10px;
@@ -154,7 +161,8 @@ nav {
       width: 5vw; }
   .content #bouton_texte:hover {
     cursor: pointer; }
-  .content .icon-about, .content .thuglife {
+  .content .icon-about,
+  .content .thuglife {
     display: inline-block;
     margin: 0 auto;
     width: 40vw; }
@@ -210,6 +218,24 @@ nav {
     font-weight: 400;
     font-size: 25px; }
 
+.setFilter {
+  cursor: pointer; }
+
+.galerie h2 {
+  color: #FFF;
+  -o-transition: 2s;
+  -ms-transition: 2s;
+  -moz-transition: 2s;
+  -webkit-transition: 2s;
+  transition: 2s; }
+
+.galerie h2:hover {
+  color: #5ad6eb; }
+
+.galerie h2:focus {
+  color: #5ad6eb;
+  border: 1px solid red; }
+
 /*==============================*\ 
 	GALERIE -- Miniatures 
 \*==============================*/
@@ -226,7 +252,7 @@ nav {
   padding: 2px;
   height: 75px;
   width: 75px;
-  /*:after {
+      /*:after {
     content:'\A';
     position:absolute;
     width:75px; height:75px;

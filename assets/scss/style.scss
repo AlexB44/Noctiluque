@@ -3,20 +3,26 @@
     src: url('../font/simplifica.ttf');
 }
 
+
 /*font-families*/
-$family-primary:'Quicksand', sans-serif;
+
+$family-primary:'Quicksand',
+sans-serif;
+
 /*Colors*/
+
 $neon-blue:#5ad6eb;
 $basic-color:#FFF;
+
 /*font-sizes*/
+
 $size-primary: 18px;
 $size-secondary: 25px;
 $size-small: 13px;
-
-
-body, .body-index {
-    margin:0;
-    padding:0;
+body,
+.body-index {
+    margin: 0;
+    padding: 0;
     overflow: hidden;
     height: 100vh;
     color: $basic-color;
@@ -24,7 +30,7 @@ body, .body-index {
 }
 
 body {
-    background-image:url("../images/style/back_empty.jpg");
+    background-image: url("../images/style/back_empty.jpg");
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -33,7 +39,7 @@ body {
 }
 
 .body-index {
-    background-image:url("../images/style/back_mermaid.jpg");
+    background-image: url("../images/style/back_mermaid.jpg");
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -41,288 +47,285 @@ body {
     -webkit-background-size: cover;
 }
 
-li, ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-  }
+li,
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
 a {
     text-decoration: none;
 }
 
-nav { 
+nav {
     float: left;
     position: absolute;
-    height:100vh;
+    height: 100vh;
     width: 10%;
     font-size: $size-primary;
     font-weight: 300;
-
     .active {
-      font-weight: 700;
+        font-weight: 700;
     }
-    
     li {
-        display:block;
-        padding-left: 50px; 
-        line-height:40px;
-
+        display: block;
+        padding-left: 50px;
+        line-height: 40px;
         a {
-          color: $basic-color;
-          -o-transition: 3s;
-          -ms-transition: 3s;
-          -moz-transition: 3s;
-          -webkit-transition: 3s;
-          transition: 3s;
-        }   
-
+            color: $basic-color;
+            -o-transition: 3s;
+            -ms-transition: 3s;
+            -moz-transition: 3s;
+            -webkit-transition: 3s;
+            transition: 3s;
+        }
         a:hover {
-          color: #1A495F;
-        }    
+            color: #1A495F;
+        }
     }
 }
 
 
 /* Refaire cette partir au propre */
+
 .wrapper {
-  margin-top: 70px;
-  top: 10vh;
-  height: 100vh;
-  width: 100vw;
+    margin-top: 70px;
+    top: 10vh;
+    height: 100vh;
+    width: 100vw;
 }
+
+
 /* Refaire cette partir au propre */
 
 .content {
-  margin: 0 auto;
-  padding-top: 80px;
-  width: 50vw;
-  text-align: center;
-
-  .icon-contact {
-    display: flex;
-      justify-content: space-around;
     margin: 0 auto;
-    margin-bottom: 5vh;
-    width: 20vw;
-    line-height: 40px;
-      
-    li, a {
-      display: flex;
-        align-items: center;
-      height: 40px;
-      width: 40px;
-    }
-
-    li[name=behance] {
-      background-image: url("../images/style/behance.png");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: contain;
-      -webkit-background-size: contain;
-    }
-
-    li[name=twitter] {
-      background-image: url("../images/style/twitter.png");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: contain;
-      -webkit-background-size: contain;
-    }
-
-    li[name=facebook] {
-      background-image: url("../images/style/facebook.png");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: contain;
-      -webkit-background-size: contain;
-    }
-
-    li[name=mail] {
-      background-image: url("../images/style/gmail.png");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: contain;
-      -webkit-background-size: contain;
-    }
-
-    li[name=skype] {
-      background-image: url("../images/style/skype.png");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: contain;
-      -webkit-background-size: contain;
-    }
-
-    li[name=slack] {
-      background-image: url("../images/style/slack.png");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: contain;
-      -webkit-background-size: contain;
-    }
-
-  }
-
-  textarea.info.skype {
-    margin: 0 auto;
-    height:3vh;
-    width: calc(20vw - 2px);
-    color: $basic-color;
-    background:transparent;
-    border: 1px solid $basic-color;
-    resize: none;
-
-    :focus {
-      height:3vh;
-    }
-  }
-
-  form {
-    margin: 0 auto;
-    width: 20vw;
-
-    input, textarea, button {
-      color: #FFF;
-      background:transparent;
-      border: 1px solid #FFF;
-    }
-
-    input, textarea {
-      margin-top: 2vh;
-      width: calc(20vw - 4px);
-    }
-
-    input, button {
-      line-height: 3.5vh;
-    }
-
-    input {
-      padding-left: 10px;
-      width: calc(20vw - 14px);
-    }
-
-    textarea {
-      height: 25vh;
-      resize: none;
-    }
-    
-    button {
-      margin-top: 2vh;
-      width: 5vw;
-    }
-  }
-
-
-/* ABOUT */
-
-  #bouton_texte:hover{
-    cursor:pointer;
-  }
-
-  .icon-about, .thuglife  {
-    display:inline-block;
-    margin: 0 auto;
-    width: 40vw;
-  }
-
-  .icon-about {
-    margin-bottom: 2vh;
-      
-      li {
-        float: left;
-        height: 50px;
-        width: 25%;
-      }
-  }
-
-  .thuglife {
-    margin: 0 auto;
+    padding-top: 80px;
+    width: 50vw;
     text-align: center;
-    font-size: $size-small;
-
-      h3 {
-        margin: 0;
-        text-align: left;
-        font-size: $size-secondary;
-        font-weight: 300;
-      }
-
-      p {
-        margin: 0.3vh 0 5vh 0;
-        text-align: left;
-      }
+    .icon-contact {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        margin-bottom: 5vh;
+        width: 20vw;
+        line-height: 40px;
+        li,
+        a {
+            display: flex;
+            align-items: center;
+            height: 40px;
+            width: 40px;
+        }
+        li[name=behance] {
+            background-image: url("../images/style/behance.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            -webkit-background-size: contain;
+        }
+        li[name=twitter] {
+            background-image: url("../images/style/twitter.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            -webkit-background-size: contain;
+        }
+        li[name=facebook] {
+            background-image: url("../images/style/facebook.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            -webkit-background-size: contain;
+        }
+        li[name=mail] {
+            background-image: url("../images/style/gmail.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            -webkit-background-size: contain;
+        }
+        li[name=skype] {
+            background-image: url("../images/style/skype.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            -webkit-background-size: contain;
+        }
+        li[name=slack] {
+            background-image: url("../images/style/slack.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            -webkit-background-size: contain;
+        }
     }
-  }
+    textarea.info.skype {
+        margin: 0 auto;
+        height: 3vh;
+        width: calc(20vw - 2px);
+        color: $basic-color;
+        background: transparent;
+        border: 1px solid $basic-color;
+        resize: none;
+         :focus {
+            height: 3vh;
+        }
+    }
+    form {
+        margin: 0 auto;
+        width: 20vw;
+        input,
+        textarea,
+        button {
+            color: #FFF;
+            background: transparent;
+            border: 1px solid #FFF;
+        }
+        input,
+        textarea {
+            margin-top: 2vh;
+            width: calc(20vw - 4px);
+        }
+        input,
+        button {
+            line-height: 3.5vh;
+        }
+        input {
+            padding-left: 10px;
+            width: calc(20vw - 14px);
+        }
+        textarea {
+            height: 25vh;
+            resize: none;
+        }
+        button {
+            margin-top: 2vh;
+            width: 5vw;
+        }
+    }
+    /* ABOUT */
+    #bouton_texte:hover {
+        cursor: pointer;
+    }
+    .icon-about,
+    .thuglife {
+        display: inline-block;
+        margin: 0 auto;
+        width: 40vw;
+    }
+    .icon-about {
+        margin-bottom: 2vh;
+        li {
+            float: left;
+            height: 50px;
+            width: 25%;
+        }
+    }
+    .thuglife {
+        margin: 0 auto;
+        text-align: center;
+        font-size: $size-small;
+        h3 {
+            margin: 0;
+            text-align: left;
+            font-size: $size-secondary;
+            font-weight: 300;
+        }
+        p {
+            margin: 0.3vh 0 5vh 0;
+            text-align: left;
+        }
+    }
+}
+
 
 /*=============================================================*\ 
 	INDEX.HTML / INDEX.HTML / INDEX.HTML / INDEX.HTML 
 -------------------------------------------------------------- 
-\*=============================================================*/ 
+\*=============================================================*/
 
 .presentation {
-  float: right;
-  padding-right: 15vw;
-  padding-top: 10vh;
-
-  h1 {
-    margin-bottom: 0px;
-    font-family:'Simplifica', sans-serif;
-    font-size: 3em;
-  }
-
-  h2 {
-    margin-top: 0px;
-    font-family: $family-primary;
-    font-size: 1.5em;
-    font-weight: 300;
-  }
+    float: right;
+    padding-right: 15vw;
+    padding-top: 10vh;
+    h1 {
+        margin-bottom: 0px;
+        font-family: 'Simplifica', sans-serif;
+        font-size: 3em;
+    }
+    h2 {
+        margin-top: 0px;
+        font-family: $family-primary;
+        font-size: 1.5em;
+        font-weight: 300;
+    }
 }
+
 
 /*=============================================================*\ 
 	GALERIE.HTML / GALERIE.HTML / GALERIE.HTML / GALERIE.HTML 
 -------------------------------------------------------------- 
-\*=============================================================*/ 
+\*=============================================================*/
 
 .galerie {
-  margin: 0 auto;
-  max-width: 632px;
-
-  h2 {
-    margin: 0;
-    padding: 0;
-    color: #FFF;
-    font-family: $family-primary;
-    font-weight: 400;
-    font-size: $size-secondary;
-  }
+    margin: 0 auto;
+    max-width: 632px;
+    h2 {
+        margin: 0;
+        padding: 0;
+        color: #FFF;
+        font-family: $family-primary;
+        font-weight: 400;
+        font-size: $size-secondary;
+    }
 }
+
+.setFilter {
+    cursor: pointer;
+}
+
+.galerie h2 {
+    color: $basic-color;
+    -o-transition: 2s;
+    -ms-transition: 2s;
+    -moz-transition: 2s;
+    -webkit-transition: 2s;
+    transition: 2s;
+}
+
+.galerie h2:hover {
+    color: #5ad6eb;
+}
+
+.galerie h2:focus {
+    color: #5ad6eb;
+    border: 1px solid red;
+}
+
 
 /*==============================*\ 
 	GALERIE -- Miniatures 
-\*==============================*/ 
+\*==============================*/
 
 .galerie--filter {
-  display: flex;
+    display: flex;
     justify-content: space-around;
-  width: 20vw;
-  margin: 0 auto;
+    width: 20vw;
+    margin: 0 auto;
 }
 
-
 .galerie--min {
-
-  ul {
-    margin-top: 10vh;
-  }
-
-  li {
-    display: inline-block;
-    padding: 2px;
-    height: 75px;
-    width: 75px;
-
-    /*:after {
+    ul {
+        margin-top: 10vh;
+    }
+    li {
+        display: inline-block;
+        padding: 2px;
+        height: 75px;
+        width: 75px;
+        /*:after {
       content:'\A';
       position:absolute;
       width:75px; height:75px;
@@ -336,136 +339,122 @@ nav {
     :hover:after {
       opacity:0;
     }*/
-  }
-
-  img {
-    height: auto; 
-    width: 100%;
-  }
+    }
+    img {
+        height: auto;
+        width: 100%;
+    }
 }
+
+
 /*=============================================================*\ 
 	DEV.HTML / DEV.HTML / DEV.HTML / DEV.HTML / DEV.HTML
 -------------------------------------------------------------- 
-\*=============================================================*/ 
+\*=============================================================*/
+
+
 /*==============================*\ 
 	DEV -- Miniatures 
-\*==============================*/ 
+\*==============================*/
 
 .dev--min {
-
-  ul {
-    margin-top: 10vh;
-  }
-
-  li {
-    display: inline-block;
-    padding: 2px;
-    height: 180px;
-    width: 180px;
-  }
-
-  img {
-    height: auto; 
-    width: 100%;
-  }
+    ul {
+        margin-top: 10vh;
+    }
+    li {
+        display: inline-block;
+        padding: 2px;
+        height: 180px;
+        width: 180px;
+    }
+    img {
+        height: auto;
+        width: 100%;
+    }
 }
+
 
 /*=============================================================*\ 
 	DEV_PROJECT.HTML / DEV_PROJECT.HTML / DEV_PROJECT.HTML
 -------------------------------------------------------------- 
-\*=============================================================*/ 
+\*=============================================================*/
 
 .web {
-  width: 100vw;
+    width: 100vw;
 }
 
 .web-left {
-  display: inline-block;
-  float: left;
-  height: 70vh;
-  width: 20vw;
-  background-image: url("../images/style/back_empty.jpg");
+    display: inline-block;
+    float: left;
+    height: 70vh;
+    width: 20vw;
+    background-image: url("../images/style/back_empty.jpg");
 }
 
 .web-right {
-  display: inline-block;
-  padding: 0 3vh;
-  float: left;
-  height: 70vh;
-  width: 20vw;
-  text-align: left;
-
-
+    display: inline-block;
+    padding: 0 3vh;
+    float: left;
+    height: 70vh;
+    width: 20vw;
+    text-align: left;
     h3 {
-      margin: 0;
-      padding: 0;
-      font-size: $size-secondary;
-      font-weight: 300;
+        margin: 0;
+        padding: 0;
+        font-size: $size-secondary;
+        font-weight: 300;
     }
-
-    h4 {
-
-    }
-
+    h4 {}
     p {
-      font-size: $size-small;
+        font-size: $size-small;
     }
-
     .dev--link {
-      height:3vh;
-      line-height:3vh;
-      width: 100%;
-      text-align: center;
-      border: 1px solid #FFF;
-      background-color: transparent;
-      text-decoration: none;
-
+        height: 3vh;
+        line-height: 3vh;
+        width: 100%;
+        text-align: center;
+        border: 1px solid #FFF;
+        background-color: transparent;
+        text-decoration: none;
         a {
-          color: $basic-color;
-          -o-transition: 1s;
-          -ms-transition: 1s;
-          -moz-transition: 13s;
-          -webkit-transition: 1s;
-          transition: 1s;
+            color: $basic-color;
+            -o-transition: 1s;
+            -ms-transition: 1s;
+            -moz-transition: 13s;
+            -webkit-transition: 1s;
+            transition: 1s;
         }
-
         a:hover {
-          color: #1A495F;
-        }  
+            color: #1A495F;
+        }
     }
-
     .dev--img {
-      background-image: url("../images/style/back_empty.jpg");
-      background-size: cover;
+        background-image: url("../images/style/back_empty.jpg");
+        background-size: cover;
     }
 }
 
-
-
 .info {
-  display: none;
+    display: none;
 }
 
 .active {
-  display: inherit;
+    display: inherit;
 }
 
-
-
-
 .disabled {
-  opacity: 0.5;
-  -o-transition: 1.5s;
-  -ms-transition: 1.5s;
-  -moz-transition: 1.5s;
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
+    opacity: 0.5;
+    -o-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
 }
 
 .enabled {
-  -o-transition: 1.5s;
-  -ms-transition: 1.5s;
-  -moz-transition: 1.5s;
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
+    -o-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
 }
