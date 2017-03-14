@@ -344,7 +344,7 @@ nav {
   display: inherit; }
 
 .disabled {
-  opacity: 0.5;
+  opacity: 0.2;
   -o-transition: 1.5s;
   -ms-transition: 1.5s;
   -moz-transition: 1.5s;
