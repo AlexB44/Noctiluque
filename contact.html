@@ -52,57 +52,37 @@
 
 
             <div class="adresse">
-                <textarea class="info skype" onclick="this.focus();this.select()">
-                <p>alexandrabodier</p>
-            </textarea>
+                <textarea class="info skype" onclick="this.focus();this.select() " spellcheck="false">alexandrabodier</textarea>
             </div>
 
             <div class="info mail active">
-                <form id="contact" method="post" action="assets/mail_form.php">
-                    <br>
-                    <input type="text" placeholder="Nom" id="nom" name="nom" tabindex="1">
-                    <!-- <input type="text" placeholder="Nom" name="user_name"> -->
-                    <br>
-                    <input type="email" placeholder="E-Mail" id="email" name="email" tabindex="2">
-                    <!-- <input type="email" placeholder="E-Mail" name="user_email"> -->
-                    <br>
-                    <textarea id="msg" name="message" tabindex="4"></textarea>
-                    <!-- <textarea id="msg" name="user_message"></textarea> -->
-                    <br>
-                    <button class="button" type="submit">Envoi</button>
+
+
+
+
+                <form id="contact" method="post" action="assets/php/mail_form.php">
+                    <fieldset>
+                        <legend>Vos coordonnées</legend>
+                        <p><label for="nom"></label><input type="text" id="nom" name="nom" tabindex="1" placeholder="Nom" /></p>
+                        <p><label for="email"></label><input type="text" id="email" name="email" tabindex="2" placeholder="Email" /></p>
+                        <p><label for="objet"></label><input type="text" id="objet" name="objet" tabindex="3" placeholder="Objet" /></p>
+                        <p><label for="message"></label><textarea id="message" name="message" tabindex="4"></textarea></p>
+                    </fieldset>
+
+                    <div style="text-align:center;"><input type="submit" name="envoi" value="Envoi" /></div>
                 </form>
+
+
+
+
+
+
             </div>
-
-
-            </form>
-            <!-- test
-            <form>
-                <fieldset>
-                    <legend>Vos coordonnées</legend>
-                    <p><label for="nom">Nom :</label><input type="text" /></p>
-                    <p><label for="email">Email :</label><input type="text" /></p>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Votre message :</legend>
-                    <p><label for="objet">Objet :</label><input type="text" id="objet" name="objet" tabindex="3" /></p>
-                    <p><label for="message">Message :</label><textarea id="message" name="message" tabindex="4" cols="30" rows="8"></textarea></p>
-                </fieldset>
-
-                <div style="text-align:center;"><input type="submit" name="envoi" value="Envoyer le formulaire !" /></div>
-            </form>
-            End test-->
-
-
-
-
-
+            <!-- End content -->
         </div>
-        <!-- End content -->
-    </div>
-    <!-- End wrapper -->
+        <!-- End wrapper -->
 
-    <script type="text/javascript" src="js/original_contact.js"></script>
+        <script type="text/javascript" src="js/original_contact.js"></script>
 
 </body>
 

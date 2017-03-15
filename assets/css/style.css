@@ -8,7 +8,6 @@ body,
 .body-index {
   margin: 0;
   padding: 0;
-  overflow: hidden;
   height: 100vh;
   color: #FFF;
   font-family: "Quicksand", sans-serif; }
@@ -131,7 +130,9 @@ nav {
     color: #FFF;
     background: transparent;
     border: 1px solid #FFF;
-    resize: none; }
+    resize: none;
+    text-align: center;
+    line-height: 3vh; }
     .content textarea.info.skype :focus {
       height: 3vh; }
   .content form {
@@ -286,7 +287,7 @@ nav {
   width: 180px; }
 .dev--min img {
   height: auto;
-  width: 100%; }
+  width: 80%; }
 
 /*=============================================================*\ 
 	DEV_PROJECT.HTML / DEV_PROJECT.HTML / DEV_PROJECT.HTML

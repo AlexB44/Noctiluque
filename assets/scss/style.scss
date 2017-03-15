@@ -23,7 +23,6 @@ body,
 .body-index {
     margin: 0;
     padding: 0;
-    overflow: hidden;
     height: 100vh;
     color: $basic-color;
     font-family: $family-primary;
@@ -169,6 +168,8 @@ nav {
         background: transparent;
         border: 1px solid $basic-color;
         resize: none;
+        text-align: center;
+        line-height: 3vh;
          :focus {
             height: 3vh;
         }
@@ -369,7 +370,7 @@ nav {
     }
     img {
         height: auto;
-        width: 100%;
+        width: 80%;
     }
 }
 
