@@ -104,12 +104,28 @@ nav {
     width: 50vw;
     text-align: center;
     .icon-contact {
-        display: flex;
-        justify-content: space-around;
         margin: 0 auto;
-        margin-bottom: 5vh;
         width: 20vw;
         line-height: 40px;
+        p {
+            line-height: 20px;
+            text-align: left;
+            padding-bottom: 20px;
+        }
+        ul {
+            display: flex;
+        }
+        li:nth-child(2) a {
+            margin-left: 20px;
+            color: #FFF;
+            text-decoration: none;
+        }
+        li {
+            margin-bottom: 20px;
+            p {
+                margin-left: 15px;
+            }
+        }
         li,
         a {
             display: flex;
@@ -160,15 +176,13 @@ nav {
             -webkit-background-size: contain;
         }
     }
-    textarea.info.skype {
-        margin: 0 auto;
+    .adresse textarea {
+        margin-left: 20px;
         height: 3vh;
-        width: calc(20vw - 2px);
-        color: $basic-color;
+        color: #FFF;
         background: transparent;
-        border: 1px solid $basic-color;
+        border: none;
         resize: none;
-        text-align: center;
         line-height: 3vh;
          :focus {
             height: 3vh;

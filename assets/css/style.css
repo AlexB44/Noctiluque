@@ -75,12 +75,23 @@ nav {
   text-align: center;
   /* ABOUT */ }
   .content .icon-contact {
-    display: flex;
-    justify-content: space-around;
     margin: 0 auto;
-    margin-bottom: 5vh;
     width: 20vw;
     line-height: 40px; }
+    .content .icon-contact p {
+      line-height: 20px;
+      text-align: left;
+      padding-bottom: 20px; }
+    .content .icon-contact ul {
+      display: flex; }
+    .content .icon-contact li:nth-child(2) a {
+      margin-left: 20px;
+      color: #FFF;
+      text-decoration: none; }
+    .content .icon-contact li {
+      margin-bottom: 20px; }
+      .content .icon-contact li p {
+        margin-left: 15px; }
     .content .icon-contact li,
     .content .icon-contact a {
       display: flex;
@@ -123,17 +134,15 @@ nav {
       background-position: center center;
       background-size: contain;
       -webkit-background-size: contain; }
-  .content textarea.info.skype {
-    margin: 0 auto;
+  .content .adresse textarea {
+    margin-left: 20px;
     height: 3vh;
-    width: calc(20vw - 2px);
     color: #FFF;
     background: transparent;
-    border: 1px solid #FFF;
+    border: none;
     resize: none;
-    text-align: center;
     line-height: 3vh; }
-    .content textarea.info.skype :focus {
+    .content .adresse textarea :focus {
       height: 3vh; }
   .content form {
     margin: 0 auto;
