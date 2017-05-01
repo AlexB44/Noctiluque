@@ -19,17 +19,23 @@
     <link href="assets/css/carousel.css" rel="stylesheet">
     <link href="assets/css/normalize.css" rel="stylesheet">
 
+    <!-- JS -->
+    <script type="text/javascript" src="assets/js/burger.js"></script>
+
 </head>
 
 <body>
 
     <div class="wrapper">
         <nav>
-            <ul>
+            <ul class="labels" id="myLabels">
                 <li><a href="galerie.html">Graphism</a></li>
                 <li><a href="dev.html">Devlopment</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a class="active" href="contact.html">Contact</a></li>
+                <li class="icon">
+                    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+                </li>
             </ul>
         </nav>
 

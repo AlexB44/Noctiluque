@@ -83,6 +83,9 @@ nav {
             color: #1A495F;
         }
     }
+    .icon {
+        display: none;
+    }
 }
 
 
@@ -478,4 +481,82 @@ nav {
     -moz-transition: 1.5s;
     -webkit-transition: 1.5s;
     transition: 1.5s;
+}
+
+@media ( max-width: 768px) {
+    .content {
+        .icon-contact {
+            width: 80%;
+        }
+    }
+    nav {
+        .ul {
+            margin-left: 310px;
+            position: absolute;
+            line-height: 50px;
+            width: 60vw;
+            li:not(:last-child) {
+                display: none;
+            }
+            li {
+                display: inline-block;
+                float: none;
+                margin-top: 0;
+                height: auto;
+                width: auto;
+                line-height: 40px;
+                a {
+                    transition: none;
+                }
+            }
+        }
+    }
+    nav {
+        float: none;
+        position: absolute;
+        top: 0;
+        height: 100px;
+        width: 100vw;
+        li:not(:last-child) {
+            display: none;
+        }
+        .icon {
+            display: block;
+            background-image: none;
+            position: fixed;
+            right: 50px;
+            top: 25px;
+            width: 40px;
+            background-color: transparent;
+        }
+        ul.labels.responsive {
+            display: block;
+            position: absolute;
+            right: 90px;
+            top: 25px;
+            width: auto;
+            background-color: #FFF;
+        }
+        ul.labels.responsive li.icon {
+            position: fixed;
+            right: 50px;
+            top: 25px;
+        }
+        ul.labels.responsive li {
+            display: inline;
+            float: none;
+            line-height: 40px;
+        }
+        ul.labels.responsive li a {
+            display: block;
+            padding: 0 5px;
+            font-weight: 400;
+            text-align: center;
+            border-bottom: 1px solid #777;
+        }
+        ul.labels.responsive li.icon a {
+            font-size: 2em;
+            border: none;
+        }
+    }
 }
