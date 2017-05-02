@@ -49,10 +49,7 @@ nav {
   nav li {
     display: block;
     padding-left: 50px;
-    line-height: 40px;
-    /* a:hover {
-        color: #1A495F;
-    }*/ }
+    line-height: 40px; }
     nav li a {
       color: #FFF;
       -o-transition: 3s;
@@ -82,8 +79,35 @@ nav {
   margin: 0 auto;
   padding-top: 80px;
   width: 50vw;
-  text-align: center;
-  /* ABOUT */ }
+  text-align: center; }
+
+/*=============================================================*\ 
+	INDEX.HTML / INDEX.HTML / INDEX.HTML / INDEX.HTML 
+-------------------------------------------------------------- 
+\*=============================================================*/
+.body-index content {
+  width: 80vw;
+  margin-left: 20vw; }
+
+.presentation h1 {
+  margin-bottom: 0px;
+  font-family: 'Simplifica', sans-serif;
+  font-size: 3em; }
+.presentation h2 {
+  margin-left: 85px;
+  margin-top: -100px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5em;
+  font-weight: 300; }
+
+/*=============================================================*\ 
+	CONTACT.HTML / CONTACT.HTML / CONTACT.HTML / CONTACT.HTML
+-------------------------------------------------------------- 
+\*=============================================================*/
+.content {
+    /*===================*\ 
+	ABOUT.HTML / ABOUT.HTML 
+    \*===================*/ }
   .content .icon-contact {
     margin: 0 auto;
     width: 20vw;
@@ -206,21 +230,6 @@ nav {
       text-align: left; }
 
 /*=============================================================*\ 
-	INDEX.HTML / INDEX.HTML / INDEX.HTML / INDEX.HTML 
--------------------------------------------------------------- 
-\*=============================================================*/
-.presentation h1 {
-  margin-bottom: 0px;
-  font-family: 'Simplifica', sans-serif;
-  font-size: 3em; }
-.presentation h2 {
-  margin-left: 85px;
-  margin-top: -100px;
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.5em;
-  font-weight: 300; }
-
-/*=============================================================*\ 
 	GALERIE.HTML / GALERIE.HTML / GALERIE.HTML / GALERIE.HTML 
 -------------------------------------------------------------- 
 \*=============================================================*/
@@ -267,21 +276,7 @@ nav {
   display: inline-block;
   padding: 2px;
   height: 75px;
-  width: 75px;
-      /*:after {
-    content:'\A';
-    position:absolute;
-    width:75px; height:75px;
-    margin: 2px;
-    background:rgba(0,0,0,0.6);
-    opacity:1;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-  }
-
-  :hover:after {
-    opacity:0;
-  }*/ }
+  width: 75px; }
 .galerie--min img {
   height: auto;
   width: 100%; }
@@ -376,6 +371,10 @@ nav {
   -webkit-transition: 1.5s;
   transition: 1.5s; }
 
+/*=============================================================*\ 
+	MEDIA QUERIES / MEDIA QUERIES / MEDIA QUERIES
+-------------------------------------------------------------- 
+\*=============================================================*/
 @media (max-width: 768px) {
   .content .icon-contact {
     width: 80%; }
@@ -392,7 +391,7 @@ nav {
     float: none;
     position: absolute;
     top: 0;
-    height: 100px;
+    height: 50px;
     width: 100vw; }
     nav li:not(:last-child) {
       display: none; }
@@ -431,6 +430,9 @@ nav {
       display: block;
       text-align: center; }
 
+    /*==============*\ 
+	GAL--768
+\*==============*/
   .content {
     width: 90vw;
     padding-top: 0; }
@@ -443,10 +445,9 @@ nav {
   .galerie h2 {
     font-size: 20px; }
 
-    /*=============================================================*\ 
-	DEV_PROJECT.HTML / DEV_PROJECT.HTML / DEV_PROJECT.HTML
--------------------------------------------------------------- 
-\*=============================================================*/
+    /*==============*\ 
+	DEV--768
+\*==============*/
   .web {
     width: 100vw; }
 
@@ -468,8 +469,5 @@ nav {
     background-size: cover;
     -webkit-background-size: initial;
     background-attachment: fixed; } }
-.body-index content {
-  width: 80vw;
-  margin-left: 20vw; }
 
 /*# sourceMappingURL=style.css.map */
