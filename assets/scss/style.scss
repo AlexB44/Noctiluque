@@ -274,9 +274,6 @@ nav {
 \*=============================================================*/
 
 .presentation {
-    float: right;
-    padding-right: 15vw;
-    padding-top: 10vh;
     h1 {
         margin-bottom: 0px;
         font-family: 'Simplifica', sans-serif;
@@ -586,5 +583,21 @@ nav {
         .dev--link {
             margin-top: 20px;
         }
+    }
+    .body-index {
+        background-image: url("../images/style/back_mermaid.jpg");
+        background-attachment: fixed;
+        background-position: -200px -100px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: initial;
+        background-attachment: fixed;
+    }
+}
+
+.body-index {
+    content {
+        width: 80vw;
+        margin-left: 20vw
     }
 }
