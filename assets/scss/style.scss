@@ -60,7 +60,7 @@ a {
 nav {
     float: left;
     position: absolute;
-    height: 100vh;
+    padding-top: 70px;
     width: 10%;
     font-size: $size-primary;
     font-weight: 300;
@@ -97,21 +97,14 @@ nav {
 
 /* Refaire cette partir au propre */
 
-.wrapper {
-    margin-top: 70px;
-    top: 10vh;
-    height: 100vh;
-    width: 100vw;
-}
-
 
 /* Refaire cette partir au propre */
 
 .content {
     margin: 0 auto;
-    padding-top: 80px;
     width: 50vw;
     text-align: center;
+    padding-top: 70px;
 }
 
 
@@ -119,13 +112,6 @@ nav {
 	INDEX.HTML / INDEX.HTML / INDEX.HTML / INDEX.HTML 
 -------------------------------------------------------------- 
 \*=============================================================*/
-
-.body-index {
-    content {
-        width: 80vw;
-        margin-left: 20vw
-    }
-}
 
 .presentation {
     h1 {
@@ -515,7 +501,6 @@ nav {
         position: absolute;
         top: 0;
         height: 50px;
-        width: 100vw;
         li:not(:last-child) {
             display: none;
         }
