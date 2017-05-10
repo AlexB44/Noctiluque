@@ -458,6 +458,13 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: initial;
-    background-attachment: fixed; } }
+    background-attachment: fixed; }
+
+    /*==============*\ 
+	ABOUT--768
+\*==============*/
+  .content .icon-about,
+  .content .thuglife {
+    width: 80vw; } }
 
 /*# sourceMappingURL=style.css.map */
