@@ -163,6 +163,7 @@ nav {
     height: 3vh;
     color: #FFF;
     overflow: hidden;
+    width: 250px;
     background: transparent;
     border: none;
     resize: none;
@@ -396,7 +397,7 @@ nav {
       line-height: 20px; }
     nav ul.labels.responsive {
       display: block;
-      position: absolute;
+      position: fixed;
       left: 55px;
       top: 25px;
       width: auto;
@@ -424,8 +425,7 @@ nav {
 	GAL--768
 \*==============*/
   .content {
-    width: 90vw;
-    padding-top: 0; }
+    width: 90vw; }
     .content .thuglife {
       width: 100%; }
 
