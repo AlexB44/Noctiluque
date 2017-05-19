@@ -114,6 +114,7 @@ nav {
 \*=============================================================*/
 
 .presentation {
+    margin-top: 20vh;
     h1 {
         margin-bottom: 0px;
         font-family: 'Simplifica', sans-serif;
@@ -143,6 +144,7 @@ nav {
             line-height: 20px;
             text-align: left;
             padding-bottom: 20px;
+            min-width: 250px;
         }
         ul {
             display: flex;
@@ -179,15 +181,8 @@ nav {
             background-size: contain;
             -webkit-background-size: contain;
         }
-        li[name=facebook] {
-            background-image: url("../images/style/facebook.png");
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: contain;
-            -webkit-background-size: contain;
-        }
         li[name=mail] {
-            background-image: url("../images/style/gmail.png");
+            background-image: url("../images/style/mail.png");
             background-repeat: no-repeat;
             background-position: center center;
             background-size: contain;
@@ -287,6 +282,13 @@ nav {
         p {
             margin: 0.3vh 0 5vh 0;
             text-align: left;
+            a {
+                color: #5ad6eb;
+            }
+            a:hover {
+                color: #afdde6;
+                transition: 1s;
+            }
         }
     }
 }
